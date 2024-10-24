@@ -1,4 +1,5 @@
 import customtkinter
+import tkinter
 from styles import title_font, h1_font
 
 
@@ -10,8 +11,19 @@ class TopLevelCompetencyDatabase(customtkinter.CTkToplevel):
         self.label = customtkinter.CTkLabel(self, text="Competency Database", font=title_font)
         self.label.grid(row=0, column=0, padx=10, pady=10, sticky="nwe")
 
+        # Setup place to input
         self.input_label = customtkinter.CTkLabel(self, text="Input Database", font=h1_font)
         self.input_label.grid(row=1, column=0, padx=10, pady=10, sticky="nw")
         self.input_frame = customtkinter.CTkFrame(self, fg_color="gray", corner_radius=50, height=50)
         self.input_frame.grid(row=2, column=0, padx=10, pady=10, sticky="nwe")
+
+        # Input fields
+        text_var = tkinter.StringVar()
+
+        self.category_input = customtkinter.CTkEntry(self.input_frame,textvariable=text_var, width=100, height=50,
+                                                     corner_radius=30, placeholder_text="Input Category",
+                                                     placeholder_text_color="white")
+        self.category_input.grid(row=0, column=0, padx=(40,0), pady=10, sticky="nw")
+        self.test_label = customtkinter.CTkLabel(self, textvariable=text_var, font=h1_font)
+        self.test_label.grid(row=3, column=0, padx=10, pady=10, sticky="nw")
 

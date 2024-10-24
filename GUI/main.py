@@ -3,7 +3,7 @@ from styles import button_font, title_font
 from plugins import TopLevelCompetencyDatabase
 
 
-class App(customtkinter.CTk):
+class CompetencyApp(customtkinter.CTk):
     def __init__(self):
         super().__init__()
         self.geometry('1080x1200')
@@ -29,5 +29,5 @@ class App(customtkinter.CTk):
             self.toplevel_competency_database.focus()
 
 
-competencyApp = App()
+competencyApp = CompetencyApp()
 competencyApp.mainloop()
