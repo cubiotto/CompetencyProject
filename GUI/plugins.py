@@ -1,9 +1,7 @@
 import customtkinter
 import tkinter
-
 from customtkinter import CTkLabel
-
-from styles import title_font, h1_font
+from styles import title_font, h1_font, button_font
 
 
 class TopLevelCompetencyDatabase(customtkinter.CTkToplevel):
@@ -44,5 +42,7 @@ class TopLevelCompetencySettings(customtkinter.CTkToplevel):
         self.category_label.grid(row=1, column=0, padx=10, pady=10, sticky="nw")
         self.category_input = customtkinter.CTkEntry(self, width=150, height=50)
         self.category_input.grid(row=2, column=0, padx=(10, 0), sticky="nw")
+        self.category_save_btn = customtkinter.CTkButton(self, text="Save", font=button_font)
+
 
 
