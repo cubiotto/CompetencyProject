@@ -1,6 +1,7 @@
 import customtkinter
-from styles import button_font, title_font
-from plugins import TopLevelCompetencyDatabase, TopLevelCompetencySettings
+from Styles.styles import button_font, title_font
+from Windows.competency_database import TopLevelCompetencyDatabase
+from Windows.competency_settings import TopLevelCompetencySettings
 
 
 class CompetencyApp(customtkinter.CTk):
