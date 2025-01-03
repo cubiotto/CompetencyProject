@@ -1,5 +1,5 @@
 import customtkinter
-from Styles.styles import h1_font, button_font
+from frontend.styles.fonts import h1_font, button_font
 from customtkinter import CTkLabel
 
 class SettingsInputSection(customtkinter.CTkFrame):

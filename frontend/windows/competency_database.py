@@ -1,7 +1,6 @@
 import customtkinter
 import tkinter
-from Styles.styles import title_font, h1_font, button_font
-
+from frontend.styles.fonts import title_font, h1_font
 
 
 class TopLevelCompetencyDatabase(customtkinter.CTkToplevel):

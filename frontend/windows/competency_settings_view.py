@@ -1,8 +1,6 @@
 import customtkinter
-from customtkinter import CTkLabel
-import tkinter
-from Styles.styles import title_font, h1_font, button_font
-from Windows.components import SettingsInputSection
+from frontend.styles.fonts import title_font
+from frontend.components.Input import SettingsInputSection
 
 class TopLevelCompetencySettings(customtkinter.CTkToplevel):
     def __init__(self):
