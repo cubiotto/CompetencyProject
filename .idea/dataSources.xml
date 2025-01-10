@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="CompetencyDatabase.db" uuid="aa367c19-eeca-4e15-910c-636edc92090b">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/backend/database/CompetencyDatabase.db</jdbc-url>
+      <working-dir>$PROJECT_DIR$/backend/database</working-dir>
+    </data-source>
+  </component>
+</project>

@@ -1,6 +1,7 @@
 import customtkinter
 import tkinter
 from frontend.styles.fonts import title_font, h1_font
+from frontend.components.Input import InputField
 
 
 class TopLevelCompetencyDatabase(customtkinter.CTkToplevel):
@@ -19,9 +20,7 @@ class TopLevelCompetencyDatabase(customtkinter.CTkToplevel):
         self.input_frame.grid(row=2, column=0, padx=10, pady=10, sticky="nwe")
 
         # Input fields
-        text_var = tkinter.StringVar()
 
-        self.category_input = customtkinter.CTkEntry(self.input_frame, width=100, height=50,
-                                                     corner_radius=30, placeholder_text="Input Category",
-                                                     placeholder_text_color="black")
-        self.category_input.grid(row=0, column=0, padx=(40,0), pady=10, sticky="nw")
+        self.input_field = InputField(self.input_frame, "Category Database", "Input Category")
+        self.input_field.grid(row=2, column=0, padx=10, pady=10, sticky="nw")
+

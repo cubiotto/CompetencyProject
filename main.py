@@ -1,6 +1,6 @@
 import customtkinter
 from frontend.styles.fonts import button_font, title_font
-from frontend.windows.competency_database import TopLevelCompetencyDatabase
+from frontend.windows.competency_database_view import TopLevelCompetencyDatabase
 from frontend.windows.competency_settings_view import TopLevelCompetencySettings
 
 

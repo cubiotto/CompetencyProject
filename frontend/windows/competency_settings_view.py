@@ -1,6 +1,6 @@
 import customtkinter
 from frontend.styles.fonts import title_font
-from frontend.components.Input import SettingsInputSection
+from frontend.components.Input import InputField
 
 class TopLevelCompetencySettings(customtkinter.CTkToplevel):
     def __init__(self):
@@ -12,5 +12,5 @@ class TopLevelCompetencySettings(customtkinter.CTkToplevel):
         self.label.grid(row=0, column=0, padx=10, pady=10, sticky="nwe")
 
         # Input Category field
-        self.category_frame = SettingsInputSection(self, "Category")
+        self.category_frame = InputField(self, "Category")
         self.category_frame.grid(row=1, column=0, padx=10, pady=10, sticky="nw")
