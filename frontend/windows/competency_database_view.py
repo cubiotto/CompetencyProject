@@ -25,8 +25,6 @@ class TopLevelCompetencyDatabase(customtkinter.CTkToplevel):
         self.input_frame.grid(row=2, column=0, padx=10, pady=10, sticky="nwe")
 
         # Input fields
-        self.base_dir = os.path.dirname(os.path.abspath(__file__))
-        print(self.base_dir)
         self.db_path = (
             Path(__file__).parent  # frontend/windows
             .parent.parent  # CompetencyProject
@@ -38,4 +36,6 @@ class TopLevelCompetencyDatabase(customtkinter.CTkToplevel):
         self.db_handler = DatabaseConnection(self.db_path)
         self.input_field = InputField(self.input_frame, "Category Database", "Input Category", self.db_handler)
         self.input_field.grid(row=2, column=0, padx=10, pady=10, sticky="nw")
+
+
 

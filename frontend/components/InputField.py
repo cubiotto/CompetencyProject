@@ -20,7 +20,7 @@ class InputField(customtkinter.CTkFrame):
 
         self.category_add_btn = customtkinter.CTkButton(self, text="Add", font=button_font, height=50,
                                                         width=50, command=self.get_input)
-        self.category_add_btn.grid(row=1, column=1, padx=10, sticky="n")
+        self.category_add_btn.grid(row=1, column=1, padx=10, pady=10, sticky="n")
 
     def get_input(self):
         input_text = self.category_input.get().strip()
