@@ -44,5 +44,6 @@ class CompetencyApp(customtkinter.CTk):
             self.toplevel_competency_settings.focus()
 
 
-competencyApp = CompetencyApp()
-competencyApp.mainloop()
+if __name__ == '__main__':
+    competencyApp = CompetencyApp()
+    competencyApp.mainloop()

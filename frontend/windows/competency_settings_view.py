@@ -1,6 +1,6 @@
 import customtkinter
 from frontend.styles.fonts import title_font
-from frontend.components.Input import InputField
+from frontend.components.InputField import InputField
 
 class TopLevelCompetencySettings(customtkinter.CTkToplevel):
     def __init__(self):
