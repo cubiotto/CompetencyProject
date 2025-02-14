@@ -9,14 +9,14 @@ class Category:
 
     def save_category(self):
         """Insert a new category into the database."""
-        if self.category_id is None:
+        if self.category_id is None and self.category_name is None:
             with self.db_connection as cursor:
                 cursor.execute('INSERT INTO Category(category_name) VALUES (?)', (self.category_name,))
                 self.category_id = cursor.lastrowid
         else:
             raise ValueError('Category already exists')
 
-    def update_category(self,new_category_name):
+    def update_category(self, new_category_name):
         """Update the category name in the database."""
         if self.category_id is not None:
             with self.db_connection as cursor:
